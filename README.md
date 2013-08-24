@@ -114,6 +114,10 @@ none for now.
   "description": {
     "en": "english description",
     "fr": "french description"
+  },
+  "result": {
+    "en": "english result description",
+    "fr": "french result description"
   }
 }
 ```
