@@ -1,0 +1,39 @@
+{
+  "iati_code": "CA-3-A018823001",
+  "title": {
+	  "en": "National Water Quality and Availability Management Program",
+	  "fr": "Programme national de gestion de l'eau"
+  },
+  "date": {
+    "start": "[type='start-actual' iso-date='1997-06-03' ]",
+    "end": "[type='end-actual' iso-date='2009-03-31' ]"
+  }, 
+  "policy": [
+    {
+      "iati_code": "1",
+      "en": "Gender Equality",
+      "fr": "L'égalité des sexes",
+      "significance": "2"
+    }
+  ],
+  "country": {
+      "iati_code": "EG",
+      "en": "Egypt",
+      "fr": "Egypt"
+  },
+  "organization": [{
+    "en": "Agriculture and Agri-Food Canada",
+    "fr": "Agriculture et agroalimentaire Canada"
+  }],
+  "description": {
+    "en": "The goal of this project is to help Government of Egypt institutions manage water resources in three key areas: improved quality/quantity of data on water; better analysis of supply and demand variables; and safe reuse of drainage water. The purpose of the Drainage Water Reuse component is to produce guidelines for reuse of drainage water in a manner that is safe for human health and for the environment. A monitoring pilot program assesses changes in water and soil quality, crop productivity, and pollutant levels due to drainage water reuse.",
+    "fr": "L'objectif de ce projet est d'aider les institutions du gouvernement égyptien à gérer les ressources hydriques dans trois domaines clés : amélioration de la qualité et de la quantité des données sur l'eau; meilleure analyse des variables de l'offre et de la demande; réutilisation sécuritaire de l'eau de drainage. Un des volets du projet vise à établir des principes directeurs sur la réutilisation de l'eau de drainage de façon sécuritaire pour la santé humaine et pour l'environnement. Un programme pilote de contrôle évalue les changements dans la qualité du sol et de l'eau, la productivité agricole et les niveaux de polluants causés par la réutilisation de l'eau de drainage."
+  },
+  "transactions": [
+    {
+      "value": 200448002,
+      "type": "C",
+      "date": "1997-06-03"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "iati_code": "CA-3-M013276002",
+  "title": {
+    "en": "Commonwealth of Learning - Institutional Support 2011",
+    "fr": "Commonwealth of Learning - Appui institutionnel 2011",
+  },
+  "date": {
+    "start": "2010-03-26",
+    "end": "2012-12-31"
+  },
+  "policy": [
+   
+  ],
+  "country": {
+    "iati_code": "998",
+    "en": "Bilateral unspecified",
+    "fr": "Bilaterale non-specifie"
+  },
+  "organization": {
+    "iati_code": "Commonwealth of Learning",
+    "en": "Commonwealth of Learning",
+    "fr": "Commonwealth of Learning"
+  },
+  "description": {
+    "en": "This grant represents Canada’s institutional support to the Commonwealth of Learning (COL). COL uses these funds, along with other donor funding, to achieve its mandate. COL’s mandate is to help governments and institutions expand the scope, scale and quality of learning by using new approaches and technologies for open and distance learning. COL applies open and distance learning to programs in grade schooling, teacher education, higher education, skills development, farming and the development of healthy communities. Canada’s support to COL contributes to finding durable solutions to education challenges and improving the quality of learning in developing countries across the Commonwealth.",
+    "fr": "Cette subvention constitue l'appui institutionnel du Canada au Commonwealth of Learning (COL). COL utilise ces fonds, ainsi que ceux d'autres donateurs, pour exécuter son mandat. Le mandat de COL est d'aider les gouvernements et les institutions à élargir la portée, l'ampleur et la qualité de l'apprentissage en utilisant de nouvelles approches et de nouvelles technologies pour la formation ouverte et à distance. COL applique la formation ouverte et à distance à des programmes d’éducation élémentaire, de formation des enseignants, d'enseignement supérieur, de développement des compétences, d'agriculture et de développement de collectivités en santé. L'appui du Canada à COL contribue à développer des solutions durables aux problèmes liés à l’éducation et à améliorer la qualité de l'apprentissage dans les pays en développement du Commonwealth."
+  },
+  "transactions": [
+    {
+      "value": 2660000,
+      "type": "C",
+      "date": "2010-03-26"
+    }
+  ]
+}

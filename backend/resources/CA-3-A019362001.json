@@ -1,0 +1,32 @@
+{
+  "iati_code": "CA-3-A019362001",
+  "title": {
+	  "en": "Microfinance Services",
+	  "fr": "Services de microfinancement"
+  },
+  "date": {
+    "start": "[type='start-actual' iso-date='2002-05-21' ]",
+    "end": "[type='end-planned' iso-date='2012-06-30' ]"
+  }, 
+  "policy": [],
+  "country": {
+      "iati_code": "JM",
+      "en": "Jamaica",
+      "fr": "Jamaica"
+  },
+  "organization": [{
+    "en": "Canadian International Development Agency",
+    "fr": "Agence canadienne de développement international"
+  }],
+  "description": {
+    "en": "This project involves the establishment of a stand-alone microfinance institution known as Micro Enterprise Financing Limited (MEFL). MEFL was incorporated in 2002 as a company serving low-income entrepreneurs with loans and other financial services such as savings facilities, initially in inner city Kingston. Since then, escalating crime and violence in Kingston have made expansion within the city unfeasible. MEFL has instead expanded by opening three rural branches around Jamaica.",
+	"fr": "Ce projet concerne l'établissement d'une institution de microfinancement autonome, appelée Micro Enterprise Financing Limited (MEFL). MEFL a été constituée en société en 2002 à titre d'entreprise offrant aux entrepreneurs à faible revenu des prêts et d'autres services financiers, tels que des produits d'épargne, à Kingston au départ. Depuis, la montée en flèche de la criminalité et de la violence à Kingston ont rendu toute expansion impossible dans cette ville. MEFL a plutôt élargi ses activités en ouvrant trois succursales rurales sur le territoire jamaïcain."
+  },
+  "transactions": [
+    {
+      "value": 3441417,
+      "type": "C",
+      "date": "2002-05-21"
+    }
+  ]
+}
