@@ -1,6 +1,5 @@
 # 2013 Citizen Attaché Hackathon
-# Ottawa on International Aid
-
+***Ottawa on International Aid***
 
 ## Set-up
 ### Front-end
@@ -25,7 +24,7 @@ For reference (i.e. you *don't* need to do this!), the command that I used to se
 ```bash
 compass create --syntax sass --sass-dir "static/stylesheets/sass" --css-dir "static/stylesheets/css" --javascripts-dir "static/js" --images-dir "static/img"
 ```
-I grabbed it [here](http://compass-style.org/install/)
+I grabbed it [here](http://compass-style.org/install/).
 
 #### Emmet stuff
 While we're still working on dummy markup, if you want to make tweaks to the **1000 line** behemoth just change the following and run it through [emmet](http://docs.emmet.io/):
