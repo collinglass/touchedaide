@@ -1,4 +1,5 @@
-# 2013 Citizen Attaché Hackathon - Ottawa on International Aid
+# 2013 Citizen Attaché Hackathon
+# Ottawa on International Aid
 
 
 ## Set-up
@@ -12,21 +13,18 @@ sudo apt-get install ruby-full rubygems1.8
 sudo gem install sass
 sudo gem install compass
 ```
-
 Switch to the dev folder:
 ```bash
 cd path/to/cdndevhack/
 ```
-
 And tell compass to watch the project!
 ```bash
 compass watch
 ```
-
 For reference (i.e. you *don't* need to do this!), the command that I used to set up compass in this directory was:
 ```bash
 compass create --syntax sass --sass-dir "static/stylesheets/sass" --css-dir "static/stylesheets/css" --javascripts-dir "static/js" --images-dir "static/img"
-
+```
 I grabbed it [here](http://compass-style.org/install/)
 
 #### Emmet stuff
