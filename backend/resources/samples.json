@@ -1,0 +1,79 @@
+[
+  {
+    "iati_code": "CA-3-A018823001",
+    "date": {
+      "start": "[type='start-actual' iso-date='1997-06-03' ]",
+      "end": "[type='end-actual' iso-date='2009-03-31' ]"
+    },
+    "policy": {
+      "iati_code": "1",
+      "en": "Gender Equality",
+      "fr": "L'égalité des sexes"
+    },
+    "country": {
+      "iati_code": "EG",
+      "en": "Egypt",
+      "fr": "Egypt"
+    },
+    "organization": [{
+      "en": "Agriculture and Agri-Food Canada",
+      "fr": "Agriculture et agroalimentaire Canada"
+    }]
+  },
+  
+  {
+    "iati_code": "CA-3-A019362001",
+    "date": {
+      "start": "[type='start-actual' iso-date='2002-05-21' ]",
+      "end": "[type='end-planned' iso-date='2012-06-30' ]"
+    }, 
+    "policy": [],
+    "country": {
+        "iati_code": "JM",
+        "en": "Jamaica",
+        "fr": "Jamaica"
+    },
+    "organization": [{
+      "en": "Canadian International Development Agency",
+      "fr": "Agence canadienne de développement international"
+    }]
+   },
+   
+   {
+     "iati_code": "CA-3-M013276002",
+     "date": {
+       "start": "2010-03-26",
+       "end": "2012-12-31"
+     },
+     "policy": [],
+     "country": {
+       "iati_code": "998",
+       "en": "Bilateral unspecified",
+       "fr": "Bilaterale non-specifie"
+     },
+     "organization": {
+       "iati_code": "Commonwealth of Learning",
+       "en": "Commonwealth of Learning",
+       "fr": "Commonwealth of Learning"
+     }
+   },
+   
+   {
+     "iati_code": "CA-3-M013276002",
+     "date": {
+       "start": "2010-03-26",
+       "end": "2012-12-31"
+     },
+     "policy": [],
+     "country": {
+       "iati_code": "998",
+       "en": "Bilateral unspecified",
+       "fr": "Bilaterale non-specifie"
+     },
+     "organization": {
+       "iati_code": "Commonwealth of Learning",
+       "en": "Commonwealth of Learning",
+       "fr": "Commonwealth of Learning"
+     }
+   }
+]

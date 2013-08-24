@@ -1,0 +1,33 @@
+{
+  "iati_code": "CA-3-M012993001",
+  "title": {
+    "en": "Ethiopia Drought Relief - CARE Canada 2009",
+    "fr": "Assistance liée à la sécheresse en Éthiopie - CARE Canada 2009",
+  },
+  "date": {
+    "start": "2009-03-28",
+    "end": "2010-10-31"
+  },
+  "policy": [
+    {
+      "iati_code": "1",
+      "en": "Gender Equality",
+      "fr": "Equalite des Sexes",
+      "significance": "1"
+    }
+  ],
+  "country": {
+    "iati_code": "ET",
+    "en": "Ethiopia",
+    "fr": "Ethiopie"
+  },
+  "organization": {
+    "iati_code": "CARE Canada",
+    "en": "CARE Canada",
+    "fr": "CARE Canada"
+  },
+  "description": {
+    "en": "The extended dry season in the pastoral areas of Afar, Somali, and part of Oromia regions, together with below-normal rainfall in Amhara, Tigray; part of Oromia; and Southern Nations, Nationalities, and Peoples (SNNP) regions have led to the most severe humanitarian crisis in Ethiopia since 2003. A significant number of people continue to face humanitarian challenges, including malnutrition, acute diarrhea, floods, poor access to health-care services, and critical water and sanitation facility shortages. All food security and livelihood analyses forecast a continued severe humanitarian situation into 2009. CIDA's contribution to CARE Canada aims to help meet the nutrition needs of the most vulnerable, drought-affected populations in Ethiopia. Activities focus on providing emergency nutritional treatment for 2,000 acutely and severely malnourished children under five, as well as an ongoing nutritional support for nearly 29,000 children and mothers at risk of acute, severe, and moderate malnutrition.",
+    "fr": "La longue saison sèche dans les zones pastorales d'Afar, de Somali et d'une partie de l'Oromie, ajoutée aux précipitations sous les normales enregistrées dans l'Amhara, le Tigray, une partie de l'Oromie et la Région des nations, nationalités et peuples du Sud, ont replongé l'Éthiopie dans une crise humanitaire telle qu'elle n'en avait pas connue depuis 2003. Une part importante de la population reste aux prises avec de graves difficultés sur le plan humanitaire, dont la malnutrition, la diarrhée aiguë, des inondations, un accès insuffisant aux soins de santé, et de sérieuses lacunes dans les installations d'approvisionnement en eau et d'assainissement. Toutes les analyses relatives à la sécurité alimentaire et aux moyens de subsistance prédisent que la situation humanitaire restera critique en 2009. La contribution de l'ACDI à CARE Canada vise à combler les besoins nutritionnels des populations les plus vulnérables touchées par la sécheresse en Éthiopie. Il s'agit d'assurer un traitement nutritionnel d'urgence à 2 000 enfants de moins de cinq ans souffrant de malnutrition aiguë sévère, ainsi qu'un soutien nutritionnel suivi à près de 29 000 enfants et mères présentant des risques de malnutrition aiguë, sévère ou modérée."
+  }
+}
