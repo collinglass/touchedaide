@@ -1,4 +1,3 @@
-
 ## Back-end API
 
 ### GET /api/activities/
@@ -42,3 +41,49 @@ filters:
 ]
 
 ```
+
+### GET /api/activities/<iati_code>
+
+#### Params
+
+none for now.
+
+#### Returns
+
+```json
+{
+  "iati_code": "code",
+  "title": "string",
+  "date": {
+    "start": "iso date",
+    "end": "iso date"
+  },
+  "policy": [
+    {
+      "iati_code": "code",
+      "en": "english name",
+      "fr": "french name",
+      "significance": "int (0 - 3; not significant - exclusive focus)"
+    },
+    ...
+  ],
+  "country": {
+    "iati_code": "code",
+    "en": "english name",
+    "fr": "french name"
+  },
+  "organization": {
+    "iati_code": "code",
+    "en": "english name",
+    "fr": "french name"
+  },
+  "description": {
+    "en": "english description",
+    "fr": "french description"
+  }
+}
+```
+
+
+
+
