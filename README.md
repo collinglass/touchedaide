@@ -1,5 +1,5 @@
 # 2013 Citizen Attaché Hackathon
-***Ottawa on International Aid***
+*Ottawa on International Aid, Visualization Team*
 
 ## Set-up
 ### Front-end
