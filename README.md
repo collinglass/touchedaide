@@ -76,7 +76,7 @@ filters:
 
 ```
 
-### GET /api/activities/<iati_code>
+### GET /api/activities/&lt;iati_code&gt;
 
 #### Params
 
