@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,55 +20,55 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 61, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 61, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
   font-size: 56.25%;
 }
 
-/* line 64, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 64, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
   font-size: 9px;
   line-height: 2em;
@@ -95,9 +95,9 @@ body {
 .nav-wrapper {
   width: 297px;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
+  top: 9px;
+  bottom: 9px;
+  left: 9px;
   right: auto;
   overflow: hidden;
 }
@@ -165,14 +165,17 @@ h2, h3 {
   color: #323232;
   background-color: white;
 }
-
 /* line 45, ../sass/screen.sass */
-.day h4, time {
-  display: block;
-  margin-left: icon-sprite-width(url('/static/img/icons/policy-sabbf5c7a5d.png'), 1);
+.day h4 {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 49, ../sass/screen.sass */
+.day li {
+  height: 64px;
 }
 
-/* line 48, ../sass/screen.sass */
+/* line 52, ../sass/screen.sass */
 time {
   position: absolute;
   top: 4.5px;
@@ -181,70 +184,60 @@ time {
   font-weight: 700;
 }
 
-/* line 54, ../sass/screen.sass */
+/* line 58, ../sass/screen.sass */
 .policy {
-  position: absolute;
-  background: url('/static/img/icons/policy-sabbf5c7a5d.png');
+  display: inline-block;
+  vertical-align: middle;
+  height: 32px;
+  width: 32px;
+  margin: 16px;
+  margin-left: 8px;
+  background-image: url('/static/img/icons/policy-sc13beb8db6.png');
+  background-size: 32px 256px;
 }
-/* line 58, ../sass/screen.sass */
-.policy.anti-desertification {
-  background-position: 0 -384px;
-  height: 64px;
-  width: 64px;
+/* line 69, ../sass/screen.sass */
+.policy.p1-environmental-aid {
+  background-position: 0 0px;
 }
-/* line 58, ../sass/screen.sass */
-.policy.biodiversity {
+/* line 69, ../sass/screen.sass */
+.policy.p2-biodiversity {
+  background-position: 0 -32px;
+}
+/* line 69, ../sass/screen.sass */
+.policy.p3-good-governence {
   background-position: 0 -64px;
-  height: 64px;
-  width: 64px;
 }
-/* line 58, ../sass/screen.sass */
-.policy.climate-change {
-  background-position: 0 -256px;
-  height: 64px;
-  width: 64px;
+/* line 69, ../sass/screen.sass */
+.policy.p4-gender-equality {
+  background-position: 0 -96px;
 }
-/* line 58, ../sass/screen.sass */
-.policy.environmental-aid {
-  background-position: 0 0;
-  height: 64px;
-  width: 64px;
-}
-/* line 58, ../sass/screen.sass */
-.policy.gender-equality {
-  background-position: 0 -192px;
-  height: 64px;
-  width: 64px;
-}
-/* line 58, ../sass/screen.sass */
-.policy.good-governence {
+/* line 69, ../sass/screen.sass */
+.policy.p5-climate-change {
   background-position: 0 -128px;
-  height: 64px;
-  width: 64px;
 }
-/* line 58, ../sass/screen.sass */
-.policy.trade-development {
-  background-position: 0 -448px;
-  height: 64px;
-  width: 64px;
+/* line 69, ../sass/screen.sass */
+.policy.p6-unknown {
+  background-position: 0 -160px;
 }
-/* line 58, ../sass/screen.sass */
-.policy.unknown {
-  background-position: 0 -320px;
-  height: 64px;
-  width: 64px;
+/* line 69, ../sass/screen.sass */
+.policy.p7-anti-desertification {
+  background-position: 0 -192px;
+}
+/* line 69, ../sass/screen.sass */
+.policy.p8-trade-development {
+  background-position: 0 -224px;
 }
 
-/* line 62, ../sass/screen.sass */
+/* line 71, ../sass/screen.sass */
 #map-wrap {
   position: absolute;
   top: 0;
   bottom: 50%;
-  left: 297px;
+  left: 306px;
   right: 0;
 }
 
-/* line 64, ../sass/screen.sass */
+/* line 73, ../sass/screen.sass */
 #map-canvas {
   position: absolute;
   top: 9px;
@@ -253,16 +246,16 @@ time {
   right: 9px;
 }
 
-/* line 66, ../sass/screen.sass */
+/* line 75, ../sass/screen.sass */
 #info-wrap {
   position: absolute;
   top: 50%;
   bottom: 0;
-  left: 297px;
+  left: 306px;
   right: 0;
 }
 
-/* line 68, ../sass/screen.sass */
+/* line 77, ../sass/screen.sass */
 #desc-wrap {
   position: absolute;
   top: 0;
@@ -271,7 +264,7 @@ time {
   right: 50%;
 }
 
-/* line 70, ../sass/screen.sass */
+/* line 79, ../sass/screen.sass */
 #desc {
   position: absolute;
   top: 4.5px;

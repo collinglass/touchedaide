@@ -12,7 +12,7 @@ body
   +box-sizing(border-box)
 .nav-wrapper
   width: $navWidth
-  +stretch(0, auto, 0, 0)
+  +stretch($rem, auto, $rem, $rem)
   overflow: hidden
 nav
   width: $navWidth + 15px
@@ -42,9 +42,13 @@ h2, h3
   +adjust-leading-to(1, 2 * $rem)
   color: contrast-color($cYear, inherit, #323232, $txtContrastThresh)
   background-color: $cDay
-.day h4, time
-  display: block
-  margin-left: icon-sprite-width($policy, 1)
+  h4
+    display: inline-block
+    // margin-left: image-width('icons/policy-sc13beb8db6.png')/2 + $rem
+    vertical-align: middle
+  li
+    height: 64px
+
 time
   position: absolute
   top: .5 * $rem
@@ -52,19 +56,24 @@ time
   font-size: 1 * $rem
   font-weight: 700
 .policy
-  position: absolute
-  background: $policy
+  display: inline-block
+  vertical-align: middle
+  height: 32px
+  width: 32px
+  margin: $spriteHeight / 4
+  margin-left: $spriteHeight / 8
+  background-image: $policy
+  background-size: image-width('icons/policy-sc13beb8db6.png')/2 image-height('icons/policy-sc13beb8db6.png')/2
+  // width: image-width($policy) Should work but compass path bug :(
   @each $i in sprite_names($policy)
     &.#{$i}
-      background-position: sprite-position($policy, $i)
-      +sprite-dimensions($policy, $i)
-
+      background-position: 0 (index(sprite_names($policy), $i) - 1) * $spriteHeight / -2 //length($policy)
 #map-wrap
-  +stretch(0, 0, 50%, $navWidth)
+  +stretch(0, 0, 50%, $navWidth + $rem)
 #map-canvas
   +stretch($rem, $rem, $rem / 2, $rem)
 #info-wrap
-  +stretch(50%, 0, 0, $navWidth)
+  +stretch(50%, 0, 0, $navWidth + $rem)
 #desc-wrap
   +stretch(0, 50%, 0, 0)
 #desc
