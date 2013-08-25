@@ -10,6 +10,8 @@ html, body
 body
   font-family: 'Raleway', sans-serif
   +box-sizing(border-box)
+strong
+  font-weight: 700
 .nav-wrapper
   width: $navWidth
   +stretch($rem, auto, $rem, $rem)
@@ -30,7 +32,8 @@ h3, h4
   font-weight: 200
 h2, h3
   +adjust-font-size-to(3 * $rem)
-  +adjust-leading-to(3, 3 * $rem)
+
+  +adjust-leading-to(2.5, 3 * $rem)
   padding-left: 2 * $rem
 .year
   +contrasted($cYear, #000, #fff, $txtContrastThresh) //compass mixin, sets text & bg color
@@ -38,23 +41,25 @@ h2, h3
   background-color: $cMonth
 .day
   position: relative
-  +adjust-font-size-to(2 * $rem)
-  +adjust-leading-to(1, 2 * $rem)
   color: contrast-color($cYear, inherit, #323232, $txtContrastThresh)
   background-color: $cDay
+  &:hover
+    background-color: $cDay - #222
   h4
     display: inline-block
+    +adjust-font-size-to(2 * $rem)
+    +adjust-leading-to(1, 2 * $rem)
     // margin-left: image-width('icons/policy-sc13beb8db6.png')/2 + $rem
     vertical-align: middle
   li
-    height: 64px
+    width: 240px //magic #, fix
+    min-height: 7 * $rem
 
 time
   position: absolute
   top: .5 * $rem
   right: .5 * $base-font-size + 15px
   font-size: 1 * $rem
-  font-weight: 700
 .policy
   display: inline-block
   vertical-align: middle
