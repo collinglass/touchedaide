@@ -1022,13 +1022,35 @@
 <script>
   var map;
   function initialize() {
+  
+  	var water = "#30acd2";
+	var landscape = "#95d1e1";
+	var maplabel = "#ffffff";
+
+	var styles = [
+	  
+	  { "featureType": "landscape", "stylers": [ { "visibility": "simplified" } ] },
+	  { "featureType": "water", "stylers": [ { "visibility": "simplified" }, { "color": water } ] },
+	  { "featureType": "landscape", "stylers": [ { "color": landscape } ] },
+	  { "featureType": "road", "stylers": [ { "visibility": "off" } ] },
+	  { "featureType": "poi", "stylers": [ { "visibility": "off" } ] },
+	  { "featureType": "administrative.country", "elementType": "geometry.stroke", "stylers": [ { "color": maplabel }, { "weight": 0.5 } ] },
+	  { "featureType": "administrative", "elementType": "labels", "stylers": [ { "color": maplabel }, { "weight": 0.1 } ] },
+	  { "featureType": "administrative.province", "stylers": [ { "visibility": "off" } ] }
+
+	];
+
     var mapOptions = {
-      zoom: 8,
-      center: new google.maps.LatLng(-34.397, 150.644),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    map = new google.maps.Map(document.getElementById('map-canvas'),
-        mapOptions);
+		mapTypeControlOptions: { mapTypeIds: [ 'Styled'] },
+		center: new google.maps.LatLng( 44.40565, 8.946256),
+		zoom: 4,
+		mapTypeId: 'Styled'
+	};
+
+	map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+	
+	 var styledMapType = new google.maps.StyledMapType(styles, { name: 'Canadian Aid Data' });
+    map.mapTypes.set('Styled', styledMapType); 
   }
 
   google.maps.event.addDomListener(window, 'load', initialize);
