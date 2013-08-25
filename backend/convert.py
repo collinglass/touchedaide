@@ -30,6 +30,8 @@ policies = [
                          'fr': 'Contre la Désertification'}},
 ]
 
+policy_l = lambda l: [{'code': p['code'], 'name': p['name'][l]} for p in policies]
+
 tree = etree.parse(DFATD_IATI)
 root = tree.getroot()
 
@@ -86,7 +88,7 @@ def getstuff():
             description=description['en']
         )
         listuff.append(dict(
-            uri='/api/',
+            uri='/api/activities/{}'.format(a_id),
             start=stuff[a_id]['start'],
             end=stuff[a_id]['end'],
             policy=[p['name'] for p in stuff[a_id]['policy']],
@@ -95,5 +97,5 @@ def getstuff():
         ))
     return stuff, listuff
 
-print getstuff()
+# print getstuff()
     
