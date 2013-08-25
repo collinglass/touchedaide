@@ -87,7 +87,10 @@ none for now.
 ```json
 {
   "iati_code": "code",
-  "title": "string",
+  "title": {
+    "en": "string",
+    "fr": "string"
+  },
   "date": {
     "start": "iso date",
     "end": "iso date"
