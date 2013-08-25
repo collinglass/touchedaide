@@ -135,7 +135,9 @@ required
     ...
   ],
   "country": "name",
-  "organization": "name",
+  "organizations": [
+    "name"
+  ],
   "description": "description",
   "result": "result description"
 }
