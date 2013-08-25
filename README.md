@@ -34,9 +34,57 @@ nav>ul>li*4>h2{Year}+ul>li*12>h3{Month}+ul>li*3>img.icon[src="demoIcon.png"]+tim
 
 ## Back-end API
 
+
+### GET /api/
+
+required:
+
+ * **lang**: language code (`en`, `fr`, ...)
+
+#### Returns
+
+```json
+{
+  "source-generated": "iso-date",
+  "resources": [
+    {
+      "name": "policies",
+      "uri": "/api/policies/"
+    },
+    {
+      "name": "activities",
+      "uri": "/api/activities/"
+    }
+  ]
+}
+```
+
+### GET /api/policies/
+
+required:
+
+ * **lang**: language code
+
+####Returns
+
+```json
+[
+  {
+    "code": "number (0-7)",
+    "name": "string",
+  },
+  ...
+]
+```
+
+
 ### GET /api/activities/
 
 #### Params
+
+required:
+
+ * **lang**: language code like `en`, `fr`, etc.
 
 filters:
 
@@ -48,26 +96,12 @@ filters:
 ```json
 [
   {
-    "iati_code": "iati code",
-    "date": {
-      "start": "iso date",
-      "end": "iso date"
-    },
-    "policy": {
-      "iati_code": "code",
-      "en": "english code name",
-      "fr": "french code name"
-    },
-    "country": {
-      "iati_code": "code",
-      "en": "english country name",
-      "fr": "french country name"
-    },
-    "organization": {
-      "iati_code": "code",
-      "en": "english org name",
-      "fr": "french org name"
-    }
+    "uri": "uri",
+    "start": "iso date",
+    "end": "iso date",
+    "policy": "code name",
+    "country": "country name",
+    "organization": "name"
   },
   .
   .
@@ -80,51 +114,29 @@ filters:
 
 #### Params
 
-none for now.
+required
+
+ * **lang**: language code like `en`, `fr`, etc.
 
 #### Returns
 
 ```json
 {
-  "iati_code": "code",
-  "title": {
-    "en": "string",
-    "fr": "string"
-  },
-  "date": {
-    "start": "iso date",
-    "end": "iso date"
-  },
+  "title": "string",
+  "start": "iso date",
+  "end": "iso date",
   "policy": [
     {
       "iati_code": "code",
-      "en": "english name",
-      "fr": "french name",
+      "name": "string",
       "significance": "int (0 - 3; not significant - exclusive focus)"
     },
     ...
   ],
-  "country": {
-    "iati_code": "code",
-    "en": "english name",
-    "fr": "french name"
-  },
-  "organization": {
-    "iati_code": "code",
-    "en": "english name",
-    "fr": "french name"
-  },
-  "description": {
-    "en": "english description",
-    "fr": "french description"
-  },
-  "result": {
-    "en": "english result description",
-    "fr": "french result description"
-  }
+  "country": "name",
+  "organization": "name",
+  "description": "description",
+  "result": "result description"
 }
 ```
-
-
-
 
