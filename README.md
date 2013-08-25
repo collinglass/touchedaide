@@ -122,6 +122,7 @@ required
 
 ```json
 {
+  "id": "unique id",
   "title": "string",
   "start": "iso date",
   "end": "iso date",
