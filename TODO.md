@@ -40,3 +40,6 @@
 * Doughnut graph on the data pages
 * Point map to selected location
 * Add nav filter
+* Figure out why lxml isn't working
+* Have something selected on load
+* Add "About" button
