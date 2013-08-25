@@ -1062,15 +1062,23 @@
 <script>
   LANG = 'en';
 
-  show_policy_list = function(data) {
+  render_policy_list = function(data) {
     console.log(data);
+  };
+
+  render_activities_list = function(data) {
+
+  };
+
+  render_activity = function(data) {
+
   };
 
   // get the list of policies
   $.ajax({
     url: '/api/policies/',
     data: {lang: LANG},
-    success: show_policy_list,
+    success: render_policy_list,
     error: function(e) { console.log('request failed: ', e) },
   });
 
@@ -1081,6 +1089,15 @@
     success: render_activities_list,
     error: function(e) { console.log('request failed: ', e) },
   });
+
+  load_activity = function(uri) {
+    $.ajax({
+      url: uri,
+      data: {lang: LANG},
+      success: render_activity,
+    error: function(e) { console.log('request failed: ', e) },
+    })
+  }
 
   /*
   $.ajax({
