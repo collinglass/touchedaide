@@ -30,7 +30,40 @@ I grabbed it [here](http://compass-style.org/install/).
 While we're still working on dummy markup, if you want to make tweaks to the **1000 line** behemoth just change the following and run it through [emmet](http://docs.emmet.io/):
 ```emmet
 nav>ul>li*4>h2{Year}+ul>li*12>h3{Month}+ul>li*3>img.icon[src="demoIcon.png"]+time{2013-08-01}+{$3M Columbia}+h4{Agriculture}
-```
+
+
+### Backen-end setup
+
+#### Stuff you need
+
+Install python, pip, and python-lxml
+
+Get virtualenv: `sudo pip install virtualenv`
+
+
+#### Development server setup
+
+`cd backend` -- get into the back end folder.
+
+`virtualenv venv` -- make a virtual environment to work from.
+
+`source venv/bin/activate` -- turn on the virtual environment.
+
+`pip install -r requirements.txt` -- install all of the project dependancies.
+
+
+#### Running the back end
+
+cd into the backend folder. If you are not activated, activate the virtualenv:
+
+`source venv/bin/activate`
+
+run!
+
+`python app.py`
+
+ta daa
+
 
 ## Back-end API
 
