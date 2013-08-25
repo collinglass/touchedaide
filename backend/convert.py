@@ -65,7 +65,7 @@ def countrify(els):
         return ished.get(max(ished))
 
 
-def getstuff():
+def getstuff(lang):
     stuff = {}
     listuff = []
     for activity in (thing for n, thing in enumerate(tree.getroot())):
@@ -79,13 +79,13 @@ def getstuff():
         # result = attrify(activity.findall('result[@type="2"]'), '{}lang'.format(XMLNS))
         stuff[a_id] = dict(
             id=a_id,
-            title=title['en'],
+            title=title[lang],
             start=date.get('start-expected', date.get('start-actual')),
             end=date.get('end-expected', date.get('end-actual')),
-            policy=[{'code': p['code'], 'name': p['name']['en'] if p['name'] else None} for p in policy],
+            policy=[{'code': p['code'], 'name': p['name'][lang] if p['name'] else None} for p in policy],
             country=country,
-            organizations = organizations['en'],
-            description=description['en']
+            organizations = organizations[lang],
+            description=description[lang]
         )
         listuff.append(dict(
             uri='/api/activities/{}'.format(a_id),

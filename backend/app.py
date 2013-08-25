@@ -11,7 +11,10 @@
 from flask import Flask, Blueprint, request, url_for, json, Response, abort
 from convert import policy_l, getstuff
 
-activities, activity_index = getstuff()
+activities, activity_index = {}, {}
+
+for lang in ('en', 'fr'):
+    activities[lang], activity_index[lang] = getstuff(lang)
 
 app = Flask(__name__)
 
@@ -45,13 +48,13 @@ def policies_index():
 @api.route('/activities/')
 def activities_index():
     lang = request.args.get('lang', 'en')
-    return Response(json.dumps(activity_index), mimetype='application/json')
+    return Response(json.dumps(activity_index[lang]), mimetype='application/json')
 
 
 @api.route('/activities/<string:iati_code>')
 def activity(iati_code):
     lang = request.args.get('lang', 'en')
-    activity = activities.get(iati_code) or abort(404)
+    activity = activities[lang].get(iati_code) or abort(404)
     return Response(json.dumps(activity), mimetype='application/json')
 
 
