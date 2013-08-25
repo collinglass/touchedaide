@@ -1,0 +1,24 @@
+// Vertical Rhythm (woop woop)
+$base-font-size: 9px
+$base-line-height: 18px
++establish-baseline
+
+$rem: $base-font-size
+
+// Layout
+$navWidth: 33 * $rem
+
+// Colors
+$txtContrastThresh: 70%
+$bgContrastThresh: 50%
+$bgChange: 20%
+
+$cYear: #d15f35
+$cMonth: contrast-color($cYear, scale_color($cYear, $lightness: $bgChange, $saturation: -$bgChange), scale_color($cYear, $lightness: -$bgChange, $saturation: -$bgChange), $bgContrastThresh)
+$cDay: contrast-color($cYear, #fff, scale_color($cMonth, $lightness: -$bgChange, $saturation: -90%), $bgContrastThresh)
+$cMenuText: text-contrast
+
+// Icons
+$policy: sprite-map("icons/policy/*.png")
+
+//image-url('bg-body.png')
