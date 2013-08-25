@@ -16,7 +16,7 @@ activities, activity_index = {}, {}
 for lang in ('en', 'fr'):
     activities[lang], activity_index[lang] = getstuff(lang)
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../frontend/static')
 
 
 api = Blueprint('api', 'api')
@@ -24,14 +24,15 @@ api = Blueprint('api', 'api')
 
 @api.route('/')
 def api_index():
+    lang = request.args.get('lang', 'en')
     index = {
-        "resources": [
+        {'en': "resources", 'fr': "resources"}[lang]: [
             {
-                "name": "policies",
+                "name": {'en': "policies", 'fr': "politiques"}[lang],
                 "uri": url_for('.policies_index'),
             },
             {
-                "name": "activities",
+                "name": {'en': "activities", 'fr': "activites"}[lang],
                 "uri": url_for('.activities_index'),
             }
         ]
@@ -61,5 +62,10 @@ def activity(iati_code):
 app.register_blueprint(api, url_prefix='/api')
 
 
+
 if __name__ == '__main__':
+    @app.route('/')
+    def main():
+        return open('../frontend/index.html').read()
+
     app.run(debug=True)

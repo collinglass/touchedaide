@@ -1019,8 +1019,6 @@
   </div>
 </div>
 
-</body>
-
 <script>
   var map;
   function initialize() {
@@ -1035,7 +1033,26 @@
 
   google.maps.event.addDomListener(window, 'load', initialize);
 
-/*
+</script>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+<script>
+  LANG = 'en';
+
+  show_policy_list = function(list) {
+    console.log(list);
+  };
+
+  // get the list of policies
+  $.ajax({
+    url: '/api/policies/',
+    data: {lang: LANG},
+    success: show_policy_list,
+    dataType: 'application/json'
+  });
+
+  /*
   $.ajax({
     url: "/api/activities/",
     data: [],
@@ -1056,5 +1073,6 @@
   });
 */
 </script>
+</body>
 
 </html>
