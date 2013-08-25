@@ -6,6 +6,7 @@
   <link href='http://fonts.googleapis.com/css?family=Raleway:200,700' rel='stylesheet' type='text/css'>
   <link href="static/stylesheets/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <link href="static/stylesheets/css/print.css" media="print" rel="stylesheet" type="text/css" />
+  <link href="static/stylesheets/css/text.css" rel="stylesheet" type="text/css" />
   <!--[if IE]>
       <link href="static/stylesheets/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
@@ -95,14 +96,28 @@
     $(".nav-wrapper").append(root);
 
     $('.day > li').on('click', function() {
-      console.log('click!');
       load_activity($(this).attr('act-uri'));
     })
   };
 
   render_activity = function(data) {
-    $('#info-wrap').text(data.title)
-    $('#info-wrap').append($("<div class='hello'></div>").text('hello hello'))
+    $('#info-wrap').text("");
+    $('#info-wrap').append($("<h1 id='title'></h1>").text(data.title));
+    $('#info-wrap').append($("<div id='start'></div>").text("Start: " + data.start));
+    if(data.end == null){
+      $('#info-wrap').append($("<div id='end'></div>").text("End: Not Documented"));
+    } else {
+      $('#info-wrap').append($("<div id='end'></div>").text("End: " + data.end));
+    }
+    if(data.country == null){
+      $('#info-wrap').append($("<div id='country'></div>").text("Country: Not Documented"));
+    } else {
+      $('#info-wrap').append($("<div id='country'></div>").text("Country: " + data.country));
+    }
+    $('#info-wrap').append($("<div id='description'></div>").text(data.description));
+    if(data.result != null){
+      $('#info-wrap').append($("<div id='result'></div>").text("Result: " + data.result));
+    }
   };
 
   // get the list of policies
@@ -128,7 +143,7 @@
       success: render_activity,
     error: function(e) { console.log('request failed: ', e) },
     })
-  }
+  };
 
 
 

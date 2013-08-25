@@ -1,0 +1,35 @@
+#info-wrap {
+	margin-left: 25px;
+	padding-left: 25px;
+	padding-top: 50px;
+}
+
+#info-wrap #title {
+	font-size: 24px;
+	font-weight: 10px;
+}
+
+#info-wrap #start {
+	margin-left: 25px;
+	margin-top: 10px;
+}
+#info-wrap #end {
+	margin-left: 25px;
+}
+
+#info-wrap #country {
+	margin-left: 25px;
+	font-size: 10px;
+}
+
+#info-wrap #description {
+	margin-top: 20px;
+	margin-left: 10px;
+	width: 750px;
+}
+
+#info-wrap #result {
+	margin-top: 20px;
+	margin-left: 10px;
+	width: 750px;
+}
