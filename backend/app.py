@@ -55,26 +55,6 @@ def activity(iati_code):
     return Response(json.dumps(activity), mimetype='application/json')
 
 
-# fake_api = Blueprint('api', 'api')
-
-# @fake_api.route('/')
-# def fake_index():
-#     return 'hellooooooooo'
-
-
-# @fake_api.route('/activities/')
-# def fake_activities_index():
-#     with open('resources/samples.json') as fake_file:
-#         return Response(fake_file.read(), mimetype='application/json')
-
-
-# @fake_api.route('/activities/<string:iati_code>')
-# def fake_activity(iati_code):
-#     with open('resources/{}.json'.format(iati_code)) as fake_file:
-#         return Response(fake_file.read(), mimetype='application/json')
-
-
-
 app.register_blueprint(api, url_prefix='/api')
 
 
