@@ -30,7 +30,7 @@ I grabbed it [here](http://compass-style.org/install/).
 While we're still working on dummy markup, if you want to make tweaks to the **1000 line** behemoth just change the following and run it through [emmet](http://docs.emmet.io/):
 ```emmet
 nav>ul>li*4>h2{Year}+ul>li*12>h3{Month}+ul>li*3>img.icon[src="demoIcon.png"]+time{2013-08-01}+{$3M Columbia}+h4{Agriculture}
-
+```
 
 ### Backen-end setup
 
