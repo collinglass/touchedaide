@@ -1040,8 +1040,8 @@
 <script>
   LANG = 'en';
 
-  show_policy_list = function(list) {
-    console.log(list);
+  show_policy_list = function(data) {
+    console.log(data);
   };
 
   // get the list of policies
@@ -1049,7 +1049,15 @@
     url: '/api/policies/',
     data: {lang: LANG},
     success: show_policy_list,
-    dataType: 'application/json'
+    error: function(e) { console.log('request failed: ', e) },
+  });
+
+  // get the list of everything
+  $.ajax({
+    url: '/api/activities/',
+    data: {lang: LANG},
+    success: render_activities_list,
+    error: function(e) { console.log('request failed: ', e) },
   });
 
   /*
