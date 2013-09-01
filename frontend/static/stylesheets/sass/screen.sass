@@ -3,8 +3,16 @@
 @import compass/layout
 @import vars
 
+input[type="radio"]+ul // (whatever "directly following" is)
+  display: none
+  max-height: 0
+  transition: max-height 4s
+input[type="radio"]:selected>ul
+  display: block
+  max-height: 3000px
+
 //html
-//  font-size: 112.5% = 18px
+//  font-size: 66.25% = 9px
 html, body
   +stretch
 body
@@ -63,16 +71,7 @@ time
 .policy
   display: inline-block
   vertical-align: middle
-  height: 32px
-  width: 32px
-  margin: $spriteHeight / 4
-  margin-left: $spriteHeight / 8
-  background-image: $policy
-  background-size: image-width('icons/policy-sc13beb8db6.png')/2 image-height('icons/policy-sc13beb8db6.png')/2
-  // width: image-width($policy) Should work but compass path bug :(
-  @each $i in sprite_names($policy)
-    &.#{$i}
-      background-position: 0 (index(sprite_names($policy), $i) - 1) * $spriteHeight / -2 //length($policy)
+  +retina-sprites($policy)
 #map-wrap
   +stretch(0, 0, 50%, $navWidth + $rem)
 #map-canvas

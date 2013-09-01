@@ -17,3 +17,4 @@ javascripts_dir = "static/js"
 # line_comments = false
 
 preferred_syntax = :sass
+style = :compressed

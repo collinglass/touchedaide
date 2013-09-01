@@ -18,6 +18,20 @@ $cMonth: contrast-color($cYear, scale_color($cYear, $lightness: $bgChange, $satu
 $cDay: contrast-color($cYear, #fff, scale_color($cMonth, $lightness: -$bgChange, $saturation: -90%), $bgContrastThresh)
 $cMenuText: text-contrast
 
-// Icons
+// Sprites
+//=sprite-reposition($x $y...)
+
+=retina-sprites($spritesheet)
+  @each $sprite in sprite_names($spritesheet)
+    &.#{$sprite}
+      $positions: ''
+      @each $j in sprite-position($spritesheet, $sprite)
+        $positions: append($positions, $j / 2, space)
+      height: image-height(sprite-file($spritesheet, $sprite)) / 2
+      width: image-width(sprite-file($spritesheet, $sprite)) / 2
+      background-position: $positions
+
+  background-image: $spritesheet
+  background-size: image-width($spritesheet)/2 image-height($spritesheet)/2
+
 $policy: sprite-map("icons/policy/*.png")
-$spriteHeight: image-height('icons/policy-sc13beb8db6.png') / 8
